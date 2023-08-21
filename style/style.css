@@ -1,0 +1,555 @@
+
+/* Дополнительные общие настройки селекторов типа*/
+
+
+button {
+    display: flex;
+    background-color: transparent;
+}
+
+img {
+    width: 100%;
+}
+
+form {
+    text-align: center;
+}
+
+input {
+    display: block;
+    margin: 15px auto;
+    border: 3px solid gray;
+    border-radius: 30px;
+    width: 400px;
+    height: 40px;
+    padding: 15px 20px;
+    font-size: 20px;
+}
+
+input:focus {
+    border: 3px solid rgb(14, 137, 171);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+
+section {
+    max-width: 1200px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+
+h1{
+    font-size: 60px;
+}
+h2 {
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 40px;
+    font-weight: 550;
+    margin-bottom: 15px;
+}
+
+p  {
+    font-size: 20px;
+}
+
+
+/* Общие классы */
+/* ************************************** */
+
+.backgruond {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: 80% 40%;
+    background-repeat: no-repeat;
+    padding-bottom: 800px;
+    z-index: -1;
+}
+
+.text {
+    width: 50%;
+    margin-top: 300px;
+}
+
+.button_order {
+    padding: 10px 30px;
+    background: linear-gradient(to right, yellowgreen, green);
+    border-radius: 50px;
+    font-size: 30px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.center {
+    text-align: center;
+}
+
+
+/* Header */
+/* *********************** */
+
+header {
+    margin-top: 40px;
+    z-index: 100;
+}
+
+header button {
+    font-size: 20px;
+}
+
+
+header li button {
+    color: rgb(255, 255, 255);
+}
+header li button:hover {
+    color: black;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+nav > div  {
+    display: flex;
+    
+}
+
+.list {
+    display: flex;
+}
+
+.list li {
+    padding: 0 20px;
+}
+
+nav img {
+    width: 50px;
+    height: 50px;
+    margin-top: -25px;
+    border-radius: 50%;
+}
+
+.list img:hover {
+    border: 3px solid yellowgreen;
+}
+
+
+/* Main */
+/* ************************************** */
+
+
+main {
+
+    margin-top: -65px;
+    position: relative;
+    flex: 1 1 auto;
+    width: 100%;
+    /* margin: 0 auto; */
+}
+
+
+/* Main - content */
+
+.main-content {
+    position: relative;
+    max-height: 800px;
+    margin-bottom: 150px;
+}
+
+
+
+.main-background {
+    background-image: url('../img/champignon_bg.png');
+    top: -305px;
+}
+
+.main-text {
+    
+}
+
+
+
+.main-text p {
+    margin-top: 30px;
+    margin-bottom: 50px;
+    font-size: 20px;
+}
+
+
+
+.main-text button:hover {
+    color: black;
+    border: 2px solid black;
+    margin-bottom: -4px;
+}
+
+
+/* Main - delivery */
+
+.delivery-blocks {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 50px;
+}
+
+.delivery-block {
+    flex: 1 1 48%;
+    text-align: center;
+    border: 2px solid grey;
+    margin: 1%;
+    border-radius: 10px;
+    padding-bottom: 20px;
+}
+
+.delivery-block:hover {
+    border: 2px solid rgb(14, 137, 171);
+}
+.delivery-block img {
+    height: 50px;
+    width: auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.scale_img{
+    transform: scale(1.4);
+}
+
+.delivery-block h3 {
+    font-size: 16px;
+    font-weight: 700;
+    padding-bottom: 10px;
+    color: rgba(0, 0, 0, 0.8);
+}
+.delivery-block p{
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.line-through {
+    text-decoration: line-through;
+}
+
+.red {
+    color: red;
+}
+
+
+/* Main - about */
+
+.about-content {
+    position: relative;
+    border: 3px solid rgba(214, 214, 214, 0);
+    margin: -3px;
+    margin-bottom: 300px;
+}
+
+.about-background {
+    background-image: url('../img/background.png');
+}
+
+.backgruond-2 {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: auto;
+    height: auto;
+        background-size: contain;
+        background-position: 100% 100%;
+        background-repeat: no-repeat;
+        z-index: -1;
+    }
+
+
+
+.about-text {
+    margin-left: 50%;
+}
+
+
+.about-text p {
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+/* Main form */
+
+form {
+    margin: 0 auto;
+    padding: 15px;
+    width: 600px;
+    border: 3px solid rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+}
+
+form button {
+    display: flex;
+        align-items: center;
+        justify-content: center;
+    margin: 50px auto;
+    width: 400px;
+    height: 40px;
+    background-color: yellowgreen;
+    border-radius: 30px;
+    padding: 15px 30px;
+    text-transform: uppercase;
+    color: white;
+    font-size: 20px;
+}
+
+form button:hover {
+    border: 2px solid black;
+    color: black;
+}
+
+form p {
+    margin: 15px 0 30px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer */
+/* ******************************* */
+footer {
+    margin-top: 50px;
+    padding: 50px 0;
+    background-color: rgba(128, 128, 128, 0.5);
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+footer button:hover {
+    color: white;
+}
+
+
+footer .button_order{
+    margin-top: -10px;
+    font-size: 14px;
+}
+
+footer .button_order:hover {
+    border: 2px solid black;
+    margin: -4px -2px;
+    margin-top: -14px;
+    color: black;
+}
+
+
+
+/* Media  record*/
+
+@media (max-width: 992px) {
+    .text {
+        border: 2px solid rgba(0, 0, 0, 0.2);
+        border-radius: 30px;
+        padding: 30px;
+        background-color: rgba(255, 255, 255, .6);
+        margin-top: 220px;
+    }
+    h1, h2 {
+        font-size: 40px;
+    }
+    .backgruond {
+        padding-bottom: 850px;
+    }
+    footer {
+        padding-bottom: 0;
+    }
+    .footer-logo, .footer-list {
+        flex-direction: column;
+        margin: 0 auto;
+    }
+        footer nav {
+            display: flex;
+            flex-direction: column;
+            
+        }
+        footer button {
+            margin: 15px 0;
+        }
+
+        .footer-list li{
+            flex-direction: column;
+            margin: 0 auto;
+        }
+}
+
+
+
+@media (max-width:767px) {
+    .body_overflow {
+            overflow: hidden;
+        }
+    
+    /* Общие классы */
+    .text {
+        width: 100%;
+    }
+
+    /* Header */
+
+    .white{
+        color: white;
+    }
+
+    .conteuner-burger {
+        padding: 15px;
+        margin-top: -10px;
+        /* z-index: 1000; */
+    }
+
+
+    .burger {
+        position: relative;
+        width: 50px;
+        height: 4px;
+        background-color: black;
+        cursor: pointer;
+    }
+    .burger::before, .burger::after {
+        content: "";
+        position: absolute;
+        width: 50px;
+        height: 4px;
+        background-color: black;
+    }
+    .burger::before {
+        top: -10px;
+    }
+    .burger::after {
+        top: 10px;
+        }
+    .burger-active {
+        background-color: transparent;
+    }
+
+    .burger-active::before {
+        top: 0;
+        width: 40px;
+        transform: rotate(45deg);
+    }
+
+    .burger-active::after {
+            width: 40px;
+            top: 0;
+            transform: rotate(-45deg);
+        }
+
+
+    .header-list {
+        position: absolute;
+        display: none;
+        margin-top: -50px;
+        margin-left: -95vw;
+        z-index: -1;
+        background-color: green;
+        padding: 100px 50vw 100vh 50vw;
+        
+    }
+    .list li{
+            margin: 50px 0;
+        }
+    .list-active {
+        display: block;
+    }
+
+    /* Main */
+
+    .about-text {
+            margin-top: 400px;
+            margin-left: 0;
+            margin-bottom: -200px;
+        }
+        .delivery-blocks{
+            display: block;
+        }
+        .delivery-block {
+            margin: 15px 0;
+        }
+
+    /* Form */
+
+        form {
+        width: 400px;
+    }
+    input {
+        width: 300px;
+    }
+    form button {
+        width: 300px;
+    }
+
+    /* Footer */
+        .footer-logo,
+        .footer-list {
+            flex-direction: column;
+            margin: 0 auto;
+        }
+    
+        footer nav {
+            display: flex;
+            flex-direction: column;
+    
+        }
+    
+        footer button {
+            margin: 15px 0;
+        }
+    
+        .footer-list li {
+            flex-direction: column;
+            margin: 0 auto;
+        }
+
+    
+    }
+    
+
+
+
+
+@media (max-width:500px) {
+    .about-background {
+        padding-bottom: 900px;
+    }
+}
+
+
+
+@media (max-width:450px) {
+    .about-background {
+            padding-bottom: 1000px;
+        }
+
+    form {
+            width: 300px;
+        }
+    
+        input {
+            width: 250px;
+        }
+    
+        form button {
+            width: 250px;
+        }
+}
